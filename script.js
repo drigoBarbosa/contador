@@ -17,7 +17,7 @@ function contagem(){
         if (iNum > 999 || fNum > 999 || pNum > 999) {
             window.alert(`[ERRO] VALOR DIGITADO EXCEDE O LIMITE DE CARACTERES! `)
         } else if (iNum < fNum) { // VERIFICA SE O INICIO É MENOR QUE O FIM, SE TRUE A CONTAGEM SERA CRESCENTE
-                resultado.innerHTML = `Contando: `
+                resultado.innerHTML = `Contando... <br>`
                 for (iNum; iNum <= fNum; iNum += pNum) { // CONTAGEM CRESCENTE
                     resultado.innerHTML += `\u{1F449} ${iNum} `
                 }
